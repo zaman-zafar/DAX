@@ -1,4 +1,4 @@
-<a href="red">**Sales&Stock = **</a>
+<a href="red">**Sales&Stock =**</a>
 <pre>
 UNION (
     SELECTCOLUMNS (

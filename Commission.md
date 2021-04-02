@@ -1,4 +1,4 @@
-﻿<a href="red">**Cosmetics Commission =**</a>
+﻿<a href="red">**C Commission =**</a>
 <pre>
 IF (
     [% Commission Cosmetics] = 1,
