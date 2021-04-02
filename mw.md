@@ -1,4 +1,4 @@
-<a href="red">**MW 25% = **</a>
+<a href="red">**MW 25% =**</a>
 <pre>
 CALCULATE (
     SUMX (
