@@ -21,25 +21,27 @@ DIVIDE (
 )
 </pre>
 
-Actual gender1 =
+<a href="red">**Actual gender =**</a>
+<pre>
 LOOKUPVALUE (
     'Employee Data'[GENDER],
     'Employee Data'[EMPLOYEECODE], '1-Sales Details'[STAFF]
 )
+</pre>
 
-
-Actual selling =
+<a href="red">**Actual selling =**</a>
+<pre>
 CALCULATE (
     MAX ( 'selling price standard'[FinalPrice] ),
     CROSSFILTER ( '1-Sales Details'[ITEMID], ItemMaster[Itemcode], BOTH )
 )
+</pre>
 
-
-
-Actual staff1 =
+<a href="red">**Actual staff =**</a>
+<pre>
 LOOKUPVALUE (
     'Employee Data'[EMPNAME],
     'Employee Data'[EMPLOYEECODE], '1-Sales Details'[STAFF]
 )
-
+</pre>
 
