@@ -1,5 +1,13 @@
 # Dax code used in PowerBI report
 
+<a href="red">**crossfilesalesandstock =</a>
+CALCULATE (
+    SUM ( 'ciurrent stock'[stockss] ),
+    CROSSFILTER ( '1-Sales Details'[STORE], 'Complete Shop Details'[Sotre Name], BOTH )
+)
+
+
+
 <span style="color:blue">some *This is Blue italic.* text</span>
 
 <span style="color:red">some **This is Red Bold.** text</span>
