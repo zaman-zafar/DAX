@@ -1,4 +1,5 @@
-Sales&Stock = 
+<a href="red">**Sales&Stock = **</a>
+<pre>
 UNION (
     SELECTCOLUMNS (
         'Closing Stock 1',

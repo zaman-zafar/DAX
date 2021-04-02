@@ -1,4 +1,5 @@
-﻿Cosmetics Commission =
+﻿<a href="red">**Cosmetics Commission =**</a>
+<pre>
 IF (
     [% Commission Cosmetics] = 1,
     CALCULATE (

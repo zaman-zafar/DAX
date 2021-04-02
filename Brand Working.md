@@ -1,21 +1,23 @@
 ﻿<a href="red">**A brand =**</a>
 <pre>
-var ratea = IF (
-        CALCULATE(SUM ( '1-Sales Details'[QTY] ),ALL('1-Sales Details'[Actual staff1])) >= SUM ( 'Commission Target'[A Target] ),
-         1,
-         2
+VAR ratea =
+    IF (
+        CALCULATE (
+            SUM ( '1-Sales Details'[QTY] ),
+            ALL ( '1-Sales Details'[Actual staff1] )
+        )
+            >= SUM ( 'Commission Target'[A Target] ),
+        1,
+        2
     )
-return
-
-CALCULATE (
-    
-        SUM ( '1-Sales Details'[QTY] ) * ratea
-    ,
-    FILTER ( ECORESCATEGORY, ECORESCATEGORY[NAME] = "A" ),
-    FILTER ( '1-Sales Details', '1-Sales Details'[NETAMOUNT] > 100 )
-)
-    + CALCULATE (
+RETURN
+    CALCULATE (
         SUM ( '1-Sales Details'[QTY] ) * ratea,
         FILTER ( ECORESCATEGORY, ECORESCATEGORY[NAME] = "A" ),
-        FILTER ( '1-Sales Details', '1-Sales Details'[NETAMOUNT] < 0 )
+        FILTER ( '1-Sales Details', '1-Sales Details'[NETAMOUNT] > 100 )
     )
+        + CALCULATE (
+            SUM ( '1-Sales Details'[QTY] ) * ratea,
+            FILTER ( ECORESCATEGORY, ECORESCATEGORY[NAME] = "A" ),
+            FILTER ( '1-Sales Details', '1-Sales Details'[NETAMOUNT] < 0 )
+        )
