@@ -1,5 +1,5 @@
 <a href="red">**A Commission =**</a>
-
+<pre>
 VAR qty =  
     CALCULATE (  
         SUMX (  
