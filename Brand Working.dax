@@ -1,8 +1,8 @@
 ﻿A brand 1 = 
 var ratea = IF (
         CALCULATE(SUM ( '1-Sales Details'[QTY] ),ALL('1-Sales Details'[Actual staff1])) >= SUM ( 'Commission Target'[A Target] ),
-         50,
-         40
+         1,
+         2
     )
 return
 
