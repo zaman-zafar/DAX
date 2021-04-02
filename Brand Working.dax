@@ -1,4 +1,5 @@
-﻿A brand 1 = 
+﻿<a href="red">**A brand =**</a>
+<pre>
 var ratea = IF (
         CALCULATE(SUM ( '1-Sales Details'[QTY] ),ALL('1-Sales Details'[Actual staff1])) >= SUM ( 'Commission Target'[A Target] ),
          1,
